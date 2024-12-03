@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+    <h1>Formularz</h1>
+    <form>
+        <!-- 1. Płeć -->
+        <fieldset>
+            <legend>1. Płeć</legend>
+            <label><input type="radio" name="plec" value="mezczyzna"> Mężczyzna</label><br>
+            <label><input type="radio" name="plec" value="kobieta"> Kobieta</label><br>
+            <label><input type="radio" name="plec" value="nie_podano"> Nie chcę podawać</label>
+        </fieldset>
+
+        <!-- 2. Imię i Nazwisko -->
+        <fieldset>
+	    <legend>2. Imię i Nazwisko:</legend>
+	    <label>Imię: <input type="text" name="imię"></label><br>
+            <label>Nazwisko: <input type="text" name="nazwisko"></label>
+        </fieldset>
+        
+
+        <!-- 3. Adres zamieszkania -->
+        <fieldset>
+            <legend>3. Adres zamieszkania</legend>
+            <label>Miasto:       <input type="text" name="miasto"></label><br>
+            <label>Ulica:        <input type="text" name="ulica"></label><br>
+            <label>Kod pocztowy: <input type="text" name="kod_pocztowy"></label>
+        </fieldset>
+
+        <!-- 4. Dodatkowe informacje* -->
+        <fieldset>
+            <legend>4. Dodatkowe informacje</legend>
+            <label>Nr telefonu: <input type="tel" name="telefon"></label><br>
+            <label>Adres e-mail: <input type="email" name="email"></label><br>
+            <small>* Jeśli jest wpisany, odpowiedź nie będzie wymagana.</small>
+        </fieldset>
+
+        <!-- 5. Informacje o Szkole -->
+        <fieldset>
+	<legend>5. Informacje o Tobie:</legend>
+            <input type="text" name="informacje_tobie" placeholder="Nazwa szkoły...">
+        </fieldset>
+
+        <!-- 6. Jak podoba Ci się szkoła -->
+        <fieldset>
+	<legend>6. Jak podoba Ci się szkoła?</legend>
+            <textarea name="opinie_szkola" rows="3" cols="30"></textarea>
+        </fieldset>
+
+        <!-- 7. Co robisz w wolnym czasie -->
+        <fieldset>
+            <legend>7. Co robisz w wolnym czasie?</legend>
+            <label><input type="checkbox" name="czas" value="ksiazki">  Książki</label><br>
+            <label><input type="checkbox" name="czas" value="gry">  Grać</label><br>
+            <label><input type="checkbox" name="czas" value="cwiczenia">  Ćwiczyć</label><br>
+            <label><input type="checkbox" name="czas" value="inne">  Inne (Napisz w uwagach)</label>
+        </fieldset>
+
+        <!-- 8. Jak oceniasz nauczycieli -->
+        <fieldset>
+	<legend>8. Jak oceniasz nauczycieli?</legend>
+            <select name="ocena_nauczycieli">
+                <option value="------------------">------------------</option>
+		<option value="bardzo_dobrze">Bardzo dobrze</option>
+                <option value="dobrze">Dobrze</option>
+                <option value="srednio">Ani dobrze, ani źle</option>
+                <option value="zle">Źle</option>
+                <option value="bardzo_zle">Bardzo źle</option>
+            </select>
+        </fieldset>
+
+        <!-- Uwagi -->
+        <label>Uwagi:<br>
+            <textarea name="uwagi" rows="3" cols="30" placeholder="Tutaj twoje uwagi..."></textarea>
+        </label><br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Wyślij</button>
+        <button type="reset">Wyczyść</button>
+        <button type="button" onclick="window.location.reload();"><a href="index.html"> Zamknij </a></button>
+        <p>Autor:Szymon Katana</p>
+   </form>
+</body>
+</html>
